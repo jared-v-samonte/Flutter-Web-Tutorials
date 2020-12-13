@@ -25,9 +25,9 @@ class NavigationBar extends StatelessWidget
             mainAxisSize: MainAxisSize.min,
             children: <Widget>
             [
-              _NavigationItem('Episodes'),
-              SizedBox(width: 60),
-              _NavigationItem('Episodes')
+              const _NavigationItem('Episodes'),
+              const SizedBox(width: 60),
+              const _NavigationItem('Episodes')
             ]
           )
         ]
@@ -44,6 +44,6 @@ class _NavigationItem extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    return Text(title, style: TextStyle(fontSize: 18));
+    return Text(title, style: const TextStyle(fontSize: 18));
   }
 }

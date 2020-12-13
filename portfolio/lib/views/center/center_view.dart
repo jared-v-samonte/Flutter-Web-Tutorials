@@ -14,7 +14,7 @@ class CenteredView extends StatelessWidget
       alignment: Alignment.topCenter,
       child: ConstrainedBox
       (
-        constraints: BoxConstraints(maxWidth: 1200),
+        constraints: const BoxConstraints(maxWidth: 1200),
         child: child,
       ),
     );
