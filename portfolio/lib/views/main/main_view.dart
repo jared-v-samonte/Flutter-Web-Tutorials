@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/navigation_bar/navigation_bar.dart';
 import 'package:portfolio/views/center/center_view.dart';
 import 'package:portfolio/views/content/intro_content.dart';
+import 'package:portfolio/action/action_button.dart';
+
 
 
 class MainView extends StatelessWidget 
@@ -23,7 +25,14 @@ class MainView extends StatelessWidget
               (
                 children: <Widget>
                 [
-                  const IntroContent()
+                  const IntroContent(),
+                  Expanded
+                  (
+                    child: Center
+                    (
+                      child: ActionButton('press me')
+                    )
+                  ) 
                 ]
               )
             )

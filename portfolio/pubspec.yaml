@@ -64,10 +64,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-  - family: recharge
-    fonts:
-      - asset: assets/fonts/recharge.ttf
-        weight: 800
+    - family: Recharge
+      fonts:
+      - asset: fonts/recharge.ttf
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
