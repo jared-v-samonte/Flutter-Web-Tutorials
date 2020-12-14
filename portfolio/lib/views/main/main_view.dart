@@ -13,7 +13,7 @@ class MainView extends StatelessWidget
   {
     return Scaffold(
       backgroundColor: Colors.purple[800],
-      body: CenteredView
+      body: CentralView
       (
         child: Column
         (
@@ -25,8 +25,8 @@ class MainView extends StatelessWidget
               (
                 children: <Widget>
                 [
-                  const IntroContent(),
-                  Expanded
+                  IntroContent(),
+                  const Expanded
                   (
                     child: Center
                     (

@@ -1,26 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/action/action_button_mobile.dart';
+import 'package:portfolio/action/action_button_monitor.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
-class ActionButton extends StatelessWidget 
+
+class ActionButton extends StatelessWidget
 {
-  
   const ActionButton(this.title);
   final String title;
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
-      child: Text(
-        title,
-        style: const TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.w800,
-          color: Colors.white,
-        ),
-      ),
-      decoration: BoxDecoration(
-          color: Colors.white12,
-          borderRadius: BorderRadius.circular(5)),
+  Widget build(BuildContext context) 
+  {
+    return ScreenTypeLayout
+    (
+      mobile: ActionButtonMobile(title),
+      tablet: ActionButtonMonitor(title),
     );
   }
 }

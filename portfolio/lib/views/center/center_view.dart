@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
-class CenteredView extends StatelessWidget 
+
+class CentralView extends StatelessWidget 
 {
-  const CenteredView({Key key, this.child}) : super(key: key);
+  const CentralView({Key key, this.child}) : super(key: key);
   final Widget child;
 
   @override
@@ -10,11 +11,11 @@ class CenteredView extends StatelessWidget
   {
     return Container
     (
-      padding: const EdgeInsets.symmetric(horizontal: 70.0, vertical: 60),
+      padding: const EdgeInsets.symmetric(horizontal: 70.0, vertical: 60.0),
       alignment: Alignment.topCenter,
       child: ConstrainedBox
       (
-        constraints: const BoxConstraints(maxWidth: 1200),
+        constraints: const BoxConstraints(maxWidth: double.maxFinite),
         child: child,
       ),
     );
