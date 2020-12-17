@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:portfolio/action/action_button.dart';
-import 'package:portfolio/views/content/intro_content.dart';
+import 'package:portfolio/views/content/content.dart';
 
-class IntroContentMonitor extends StatelessWidget 
+class ContentMonitor extends StatelessWidget 
 {
-  const IntroContentMonitor({Key key}) : super(key: key);
+  const ContentMonitor({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) 
@@ -12,7 +12,7 @@ class IntroContentMonitor extends StatelessWidget
     return Row(
       children: <Widget>
       [
-        IntroContent(),
+        ContentView(),
         const Expanded
         (
           child: Center
@@ -24,3 +24,4 @@ class IntroContentMonitor extends StatelessWidget
     );
   }
 }
+*/

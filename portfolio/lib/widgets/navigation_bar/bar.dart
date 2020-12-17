@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/navigation_bar/navigation_bar_monitor.dart';
-import 'package:portfolio/navigation_bar/navigation_bar_mobile.dart';
+import 'package:portfolio/widgets/navigation_bar/navigation_bar_monitor.dart';
+import 'package:portfolio/widgets/navigation_bar/navigation_bar_mobile.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
-class NavigationBar extends StatelessWidget 
+class Bar extends StatelessWidget 
 {
-  const NavigationBar({Key key}) : super(key: key);
+  const Bar({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) 

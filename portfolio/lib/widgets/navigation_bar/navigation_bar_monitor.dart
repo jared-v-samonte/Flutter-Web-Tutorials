@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/navigation_bar/picture.dart';
-import 'package:portfolio/navigation_bar/label.dart';
+import 'package:portfolio/widgets/navigation_bar/picture.dart';
+import 'package:portfolio/widgets/navigation_bar/bar_item.dart';
+import 'package:portfolio/route/names.dart';
 
 
 class NavigationBarMonitor extends StatelessWidget
@@ -23,25 +24,15 @@ class NavigationBarMonitor extends StatelessWidget
             mainAxisSize: MainAxisSize.min,
             children: <Widget>
             [
-              const Label('Updates'),
+              const BarItem('Home', HomeRoute),
               const SizedBox(width: 60),
-              const Label('Projects')
+              const BarItem('Content', ContentRoute),
+              const SizedBox(width: 60),
+              const BarItem('About', AboutRoute)
             ]
           )
         ]
       )
     );
-  }
-}
-
-
-class _NavigationItem extends StatelessWidget
-{
-  final String title;
-  const _NavigationItem(this.title);
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(title, style: const TextStyle(fontSize: 18));
   }
 }

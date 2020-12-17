@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/navigation_bar/picture.dart';
-import 'package:portfolio/navigation_bar/label.dart';
+import 'package:portfolio/widgets/navigation_bar/picture.dart';
+import 'package:portfolio/widgets/navigation_bar/bar_item.dart';
 
 class NavigationBarMobile extends StatelessWidget 
 {

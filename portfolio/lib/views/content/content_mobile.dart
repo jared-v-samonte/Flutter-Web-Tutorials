@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/action/action_button.dart';
-import 'package:portfolio/views/content/intro_content.dart';
+import 'package:portfolio/views/content/content.dart';
 
-class IntroContentMobile extends StatelessWidget 
+class ContentMobile extends StatelessWidget 
 {
-  const IntroContentMobile({Key key}) : super(key: key);
+  const ContentMobile({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) 
@@ -15,7 +15,7 @@ class IntroContentMobile extends StatelessWidget
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>
       [
-        IntroContent(),
+        ContentView(),
         const SizedBox(height: 100.0),
         const ActionButton('Join Course'),
       ],

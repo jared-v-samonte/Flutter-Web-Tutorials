@@ -1,9 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_builder/responsive_builder.dart';
+//import 'package:responsive_builder/responsive_builder.dart';
 
 
+class AboutView extends StatelessWidget 
+{
+  const AboutView({Key key}) : super(key: key);
 
-class IntroContent extends StatelessWidget 
+  @override
+  Widget build(BuildContext context) 
+  {
+    return const Center
+    (
+      child: Text('About View'),
+    );
+  }
+}
+
+/*
+class About extends StatelessWidget 
 {
   @override
   Widget build(BuildContext context) 
@@ -54,3 +68,4 @@ class IntroContent extends StatelessWidget
     });
   }
 }
+*/

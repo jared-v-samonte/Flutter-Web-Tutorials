@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/nav_drawer/drawer_header.dart';
-import 'package:portfolio/navigation_bar/navigation_bar.dart';
-import 'package:portfolio/views/center/center_view.dart';
-import 'package:portfolio/views/content/intro_content.dart';
+import 'package:portfolio/widgets/navigation_drawer/drawer_header.dart';
+import 'package:portfolio/widgets/navigation_bar/bar.dart';
+import 'package:portfolio/views/home/home.dart';
 import 'package:portfolio/action/action_button.dart';
-import 'package:portfolio/nav_drawer/drawer_header.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 
@@ -23,25 +21,27 @@ class MainView extends StatelessWidget
             ? const HeaderDrawer()
             : null,
         backgroundColor: Colors.purple[800],
-        body: CentralView
+        body: Center
         (
           child: Column
           (
             children: <Widget>
             [
-              const NavigationBar(),
+              const Bar(),
+              const SizedBox
+              (
+                width: 60,
+              ),
               Expanded
-              (child: Row
+              (
+                child: Row
                 (
                   children: <Widget>
                   [
-                    IntroContent(),
+                    const HomeView(),
                     const Expanded
                     (
-                      child: Center
-                      (
-                        child: ActionButton('press me')
-                      )
+                      child: ActionButton('press me')
                     ) 
                   ]
                 )

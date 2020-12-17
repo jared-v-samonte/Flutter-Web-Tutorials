@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/views/main/main_view.dart';
+import 'package:portfolio/locator.dart';
 
 
 void main() 
 {
+  setupLocator();
   runApp(MyApp());
 }
 
