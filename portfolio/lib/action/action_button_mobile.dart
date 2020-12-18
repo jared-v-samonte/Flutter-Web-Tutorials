@@ -11,12 +11,13 @@ class ActionButtonMobile extends StatelessWidget
   {
     return  Container
     (
-      height: 60,
+      constraints: BoxConstraints.loose(const Size.fromWidth(60.0)),
+      padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),  
       alignment: Alignment.center,
       child: Text
       (
         title,
-        style: const TextStyle
+        style: TextStyle
         (
           fontSize: 18,
           fontWeight: FontWeight.w800,
@@ -25,7 +26,7 @@ class ActionButtonMobile extends StatelessWidget
       ),
       decoration: BoxDecoration
       (
-        color: const Color.fromARGB(255, 31, 229, 146),
+        color: Color.fromARGB(255, 31, 229, 146),
         borderRadius: BorderRadius.circular(5),
       ),
     );

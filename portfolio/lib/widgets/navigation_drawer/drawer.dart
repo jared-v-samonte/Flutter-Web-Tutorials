@@ -13,7 +13,6 @@ class Drawer extends StatelessWidget
   {
     return Container
     (
-      width: 300,
       decoration: const BoxDecoration
       (
           color: Colors.white,
@@ -24,6 +23,8 @@ class Drawer extends StatelessWidget
       ),
       child: Column
       (
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>
         [
           const HeaderDrawer(),

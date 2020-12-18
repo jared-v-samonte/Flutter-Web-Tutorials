@@ -7,18 +7,25 @@ class ActionButtonMonitor extends StatelessWidget
   final String title;
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
+  Widget build(BuildContext context) 
+  {
+    return Container
+    (
+      constraints: BoxConstraints(maxHeight: 75.0, maxWidth: 30.0),
       padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 15),
-      child: Text(
+      child: Text
+      (
         title,
-        style: const TextStyle(
+        textAlign: TextAlign.center,
+        style: TextStyle
+        (
           fontSize: 18,
           fontWeight: FontWeight.w800,
           color: Colors.white,
         ),
       ),
-      decoration: BoxDecoration(
+      decoration: BoxDecoration
+      (
           color: Colors.white12,
           borderRadius: BorderRadius.circular(5)),
     );

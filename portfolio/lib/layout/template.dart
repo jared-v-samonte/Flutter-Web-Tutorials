@@ -8,6 +8,7 @@ import 'package:portfolio/route/router.dart';
 import 'package:portfolio/locator.dart';
 
 
+
 class LayoutTemplate extends StatelessWidget 
 {
   const LayoutTemplate({Key key}) : super(key: key);
@@ -20,17 +21,18 @@ class LayoutTemplate extends StatelessWidget
       builder: (context, sizingInformation) => Scaffold
       (
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
-            ? Drawer()
+            ? const Drawer()
             : null,
         backgroundColor: Colors.white,
-        body: CentralView
+        body: CenterBox
         (
           child: Column
           (
             children: <Widget>
             [
-              Bar(),
-              Expanded(
+              const Bar(),
+              Expanded
+              (
                 child: Navigator
                 (
                   key: locator<NavigationService>().navigatorKey,

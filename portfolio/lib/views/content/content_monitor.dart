@@ -1,4 +1,4 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:portfolio/action/action_button.dart';
 import 'package:portfolio/views/content/content.dart';
 
@@ -15,13 +15,9 @@ class ContentMonitor extends StatelessWidget
         ContentView(),
         const Expanded
         (
-          child: Center
-          (
-            child: ActionButton('Join Course'),
-          ),
+          child: ActionButton('Join Course'),
         )
       ],
     );
   }
 }
-*/

@@ -9,16 +9,23 @@ class ContentMobile extends StatelessWidget
   @override
   Widget build(BuildContext context) 
   {
-    return Column
+    return 
+    Expanded
     (
-      mainAxisSize: MainAxisSize.max,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>
-      [
-        ContentView(),
-        const SizedBox(height: 100.0),
-        const ActionButton('Join Course'),
-      ],
+      child: Column
+      (
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>
+        [
+          ContentView(),
+          const SizedBox(height: 100.0),
+          const Expanded
+          (
+            child: ActionButton('Join Course')
+          )
+        ],
+      )
     );
   }
 }

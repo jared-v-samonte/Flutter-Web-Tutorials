@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/navigation_drawer/drawer_header.dart';
+import 'package:portfolio/widgets/center/center_view.dart';
 import 'package:portfolio/widgets/navigation_bar/bar.dart';
 import 'package:portfolio/views/home/home.dart';
 import 'package:portfolio/action/action_button.dart';
@@ -18,10 +19,10 @@ class MainView extends StatelessWidget
       builder: (context, sizingInformation) => Scaffold
       (
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.Mobile
-            ? const HeaderDrawer()
+            ?  const HeaderDrawer()
             : null,
         backgroundColor: Colors.purple[800],
-        body: Center
+        body: CenterBox
         (
           child: Column
           (
@@ -32,20 +33,11 @@ class MainView extends StatelessWidget
               (
                 width: 60,
               ),
-              Expanded
+              const HomeView(),
+              const Expanded
               (
-                child: Row
-                (
-                  children: <Widget>
-                  [
-                    const HomeView(),
-                    const Expanded
-                    (
-                      child: ActionButton('press me')
-                    ) 
-                  ]
-                )
-              )
+                child: ActionButton('press me')
+              ) 
             ]
           )
         )

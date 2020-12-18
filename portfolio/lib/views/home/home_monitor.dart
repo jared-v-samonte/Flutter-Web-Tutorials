@@ -10,24 +10,22 @@ class HomeMonitor extends StatelessWidget
   @override
   Widget build(BuildContext context) 
   {
-    return Row
+    return Container
     (
-      mainAxisSize: MainAxisSize.max,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>
-      [
-        const Details(),
-        const Expanded
-        (
-          child: Center
+      child: Row
+      (
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>
+        [
+          const Details(),
+          const Expanded
           (
             child: ActionButton('Join Course'),
           ),
-        )
-      ],
+          
+        ],
+      )
     );
-    
   }
 }
-
-

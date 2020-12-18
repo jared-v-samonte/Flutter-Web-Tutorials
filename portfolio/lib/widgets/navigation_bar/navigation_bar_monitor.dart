@@ -13,24 +13,20 @@ class NavigationBarMonitor extends StatelessWidget
   {
     return Container
     (
-      height: 100,
+      height: 200,
+      width:900,
       child: Row
       (
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>
         [
           const Picture('assets/profile_pic.jpg'),
-          Row
-          (
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>
-            [
-              const BarItem('Home', HomeRoute),
-              const SizedBox(width: 60),
-              const BarItem('Content', ContentRoute),
-              const SizedBox(width: 60),
-              const BarItem('About', AboutRoute)
-            ]
-          )
+          const SizedBox(width: 40),
+          const BarItem('Home', HomeRoute),
+          const SizedBox(width: 60),
+          const BarItem('Content', ContentRoute),
+          const SizedBox(width: 60),
+          const BarItem('About', AboutRoute)
         ]
       )
     );

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 
-class CentralView extends StatelessWidget 
+class CenterBox extends StatelessWidget 
 {
-  const CentralView({Key key, this.child}) : super(key: key);
+  const CenterBox({Key key, this.child}) : super(key: key);
   final Widget child;
 
   @override
@@ -15,7 +15,7 @@ class CentralView extends StatelessWidget
       alignment: Alignment.topCenter,
       child: ConstrainedBox
       (
-        constraints: const BoxConstraints(maxWidth: double.maxFinite),
+        constraints: const BoxConstraints(maxWidth: 1200.0, maxHeight: 600.0),
         child: child,
       ),
     );

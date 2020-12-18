@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/navigation_bar/picture.dart';
-import 'package:portfolio/widgets/navigation_bar/bar_item.dart';
 
 class NavigationBarMobile extends StatelessWidget 
 {
@@ -11,10 +10,11 @@ class NavigationBarMobile extends StatelessWidget
   {
     return Container
     (
-      height: 80,
+      height: 80.0,
+      width: 20.0,
       child: Row
       (
-        mainAxisSize: MainAxisSize.max,
+        mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>
         [

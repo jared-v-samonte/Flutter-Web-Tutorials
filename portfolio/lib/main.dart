@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget
           primarySwatch: Colors.blue,
           textTheme: Theme.of(context).textTheme.apply
           (
-            fontFamily: 'recharge.recharge',
+            fontFamily: 'Recharge',
           )      
         ),
       home: MainView()
